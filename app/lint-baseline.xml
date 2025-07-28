@@ -1,0 +1,2984 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<issues format="6" by="lint 8.11.1" type="baseline" client="gradle" dependencies="false" name="AGP (8.11.1)" variant="all" version="8.11.1">
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                        val formattedDate = String.format("
+        errorLine2="                                            ^">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AddAppointmentScreen.kt"
+            line="846"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="            String.format(&quot;%02d:00&quot;, hour)"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AddAppointmentScreen.kt"
+            line="899"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                                birthDate = String.format("
+        errorLine2="                                            ^">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AddCustomerScreen.kt"
+            line="572"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                            hireDate = String.format("
+        errorLine2="                                       ^">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AddEmployeeScreen.kt"
+            line="528"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                        val formattedDate = String.format("
+        errorLine2="                                            ^">
+        <location
+            file="src/main/java/com/example/beautydate/screens/EditAppointmentScreen.kt"
+            line="775"
+            column="45"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                times.add(String.format(&quot;%02d:%02d&quot;, hour, minute))"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/EditAppointmentScreen.kt"
+            line="827"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="                            hireDate = String.format("
+        errorLine2="                                       ^">
+        <location
+            file="src/main/java/com/example/beautydate/screens/EditEmployeeScreen.kt"
+            line="508"
+            column="40"/>
+    </issue>
+
+    <issue
+        id="DefaultLocale"
+        message="Implicitly using the default locale is a common source of bugs: Use `String.format(Locale, ...)` instead"
+        errorLine1="        get() = String.format(&quot;%.1f&quot;, averageSkillsPerEmployee)"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/viewmodels/state/EmployeeUiState.kt"
+            line="185"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="RedundantLabel"
+        message="Redundant label can be removed"
+        errorLine1="            android:label=&quot;@string/app_name&quot;"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/AndroidManifest.xml"
+            line="21"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="AndroidGradlePluginVersion"
+        message="A newer version of Gradle than 8.13 is available: 8.14.3"
+        errorLine1="distributionUrl=https\://services.gradle.org/distributions/gradle-8.13-bin.zip"
+        errorLine2="                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/wrapper/gradle-wrapper.properties"
+            line="4"
+            column="17"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.android.tools:desugar_jdk_libs than 2.0.4 is available: 2.1.5"
+        errorLine1="    coreLibraryDesugaring(&quot;com.android.tools:desugar_jdk_libs:2.0.4&quot;)"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="175"
+            column="27"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-runtime-ktx than 2.9.1 is available: 2.9.2"
+        errorLine1="lifecycleRuntimeKtx = &quot;2.9.1&quot;"
+        errorLine2="                      ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="8"
+            column="23"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.compose:compose-bom than 2025.06.01 is available: 2025.07.00"
+        errorLine1="composeBom = &quot;2025.06.01&quot;"
+        errorLine2="             ~~~~~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="10"
+            column="14"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-livedata-ktx than 2.9.1 is available: 2.9.2"
+        errorLine1="viewmodelCompose = &quot;2.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-compose than 2.9.1 is available: 2.9.2"
+        errorLine1="viewmodelCompose = &quot;2.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.lifecycle:lifecycle-viewmodel-ktx than 2.9.1 is available: 2.9.2"
+        errorLine1="viewmodelCompose = &quot;2.9.1&quot;"
+        errorLine2="                   ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="11"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.navigation:navigation-compose than 2.9.1 is available: 2.9.2"
+        errorLine1="navigationCompose = &quot;2.9.1&quot;"
+        errorLine2="                    ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="12"
+            column="21"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of com.google.firebase:firebase-bom than 33.16.0 is available: 34.0.0"
+        errorLine1="firebaseBom = &quot;33.16.0&quot;"
+        errorLine2="              ~~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="13"
+            column="15"/>
+    </issue>
+
+    <issue
+        id="GradleDependency"
+        message="A newer version of androidx.datastore:datastore-preferences than 1.0.0 is available: 1.1.7"
+        errorLine1="datastore = &quot;1.0.0&quot;"
+        errorLine2="            ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.android than 2.0.0 is available: 2.2.0"
+        errorLine1="kotlin = &quot;2.0.0&quot;"
+        errorLine2="         ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of org.jetbrains.kotlin.plugin.compose than 2.0.0 is available: 2.2.0"
+        errorLine1="kotlin = &quot;2.0.0&quot;"
+        errorLine2="         ~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="3"
+            column="10"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of com.google.dagger.hilt.android than 2.56.2 is available: 2.57"
+        errorLine1="hilt = &quot;2.56.2&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="15"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of com.google.dagger:hilt-android than 2.56.2 is available: 2.57"
+        errorLine1="hilt = &quot;2.56.2&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="15"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="NewerVersionAvailable"
+        message="A newer version of com.google.dagger:hilt-compiler than 2.56.2 is available: 2.57"
+        errorLine1="hilt = &quot;2.56.2&quot;"
+        errorLine2="       ~~~~~~~~">
+        <location
+            file="$HOME/Desktop/Android Studio/BeautyDate/gradle/libs.versions.toml"
+            line="15"
+            column="8"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AddCustomerScreen.kt"
+            line="103"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/AppointmentCard.kt"
+            line="60"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AppointmentDetailScreen.kt"
+            line="33"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/AppointmentFab.kt"
+            line="21"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/AppointmentsScreen.kt"
+            line="45"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/BusinessExpensesScreen.kt"
+            line="38"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/CommonComponents.kt"
+            line="187"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/CustomerAppointmentHistoryBottomSheet.kt"
+            line="38"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/CustomerDetailScreen.kt"
+            line="48"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/CustomerItem.kt"
+            line="35"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/components/CustomerNoteCard.kt"
+            line="28"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/components/CustomerNoteFormSheet.kt"
+            line="43"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/components/CustomerSearchBar.kt"
+            line="22"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/EditCustomerScreen.kt"
+            line="36"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/LoginFormSection.kt"
+            line="30"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/MusterilerScreen.kt"
+            line="44"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/OtherMenuItem.kt"
+            line="110"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/components/ServiceCard.kt"
+            line="31"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="ModifierParameter"
+        message="Modifier parameter should be the first optional parameter"
+        errorLine1="    modifier: Modifier = Modifier"
+        errorLine2="    ~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/components/ThemeSelector.kt"
+            line="27"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="Typos"
+        message="&quot;Adres&quot; is a common misspelling; did you mean &quot;Address&quot;?"
+        errorLine1="    &lt;string name=&quot;address&quot;>Adres&lt;/string>"
+        errorLine2="                           ^">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="32"
+            column="28"/>
+    </issue>
+
+    <issue
+        id="KaptUsageInsteadOfKsp"
+        message="This library supports using KSP instead of kapt, which greatly improves performance. Learn more: https://developer.android.com/studio/build/migrate-to-ksp"
+        errorLine1="    kapt(libs.room.compiler)"
+        errorLine2="    ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="154"
+            column="5"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var selectedMonth by remember { mutableStateOf(currentMonth) }"
+        errorLine2="                                    ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/CalendarScreen.kt"
+            line="1273"
+            column="37"/>
+    </issue>
+
+    <issue
+        id="AutoboxingStateCreation"
+        message="Prefer `mutableIntStateOf` instead of `mutableStateOf`"
+        errorLine1="    var selectedYear by remember { mutableStateOf(currentYear) }"
+        errorLine2="                                   ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/java/com/example/beautydate/screens/CalendarScreen.kt"
+            line="1274"
+            column="36"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.purple_200` appears to be unused"
+        errorLine1="    &lt;color name=&quot;purple_200&quot;>#FFBB86FC&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="3"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.purple_500` appears to be unused"
+        errorLine1="    &lt;color name=&quot;purple_500&quot;>#FF6200EE&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="4"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.purple_700` appears to be unused"
+        errorLine1="    &lt;color name=&quot;purple_700&quot;>#FF3700B3&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="5"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.teal_200` appears to be unused"
+        errorLine1="    &lt;color name=&quot;teal_200&quot;>#FF03DAC5&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="6"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.teal_700` appears to be unused"
+        errorLine1="    &lt;color name=&quot;teal_700&quot;>#FF018786&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="7"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.black` appears to be unused"
+        errorLine1="    &lt;color name=&quot;black&quot;>#FF000000&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="8"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.color.white` appears to be unused"
+        errorLine1="    &lt;color name=&quot;white&quot;>#FFFFFFFF&lt;/color>"
+        errorLine2="           ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/colors.xml"
+            line="9"
+            column="12"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.drawable.logo` appears to be unused">
+        <location
+            file="src/main/res/drawable/logo.png"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.welcome_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;welcome_title&quot;>BeautyDate\&apos;e Hoş Geldiniz&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="6"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.welcome_subtitle` appears to be unused"
+        errorLine1="    &lt;string name=&quot;welcome_subtitle&quot;>Tüm güzellik randevularınızı kolayca yönetin ve işletmenizi daha hızlı büyütün!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="7"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.email` appears to be unused"
+        errorLine1="    &lt;string name=&quot;email&quot;>E-posta&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="13"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;password&quot;>Parola&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="15"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.confirm_password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;confirm_password&quot;>Parolayı Onayla&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="16"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.forgot_password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;forgot_password&quot;>Parolamı Unuttum?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="17"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.login_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;login_success&quot;>Giriş başarılı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="18"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.register_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;register_success&quot;>Kayıt başarılı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="19"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.welcome_back` appears to be unused"
+        errorLine1="    &lt;string name=&quot;welcome_back&quot;>Tekrar Hoş Geldiniz&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="22"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.manage_appointments` appears to be unused"
+        errorLine1="    &lt;string name=&quot;manage_appointments&quot;>Randevularınızı güvenli ve kolay bir şekilde yönetin.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="23"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.email_not_verified` appears to be unused"
+        errorLine1="    &lt;string name=&quot;email_not_verified&quot;>Lütfen E-posta adresinizi doğrulayın.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="25"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.email_verification_sent` appears to be unused"
+        errorLine1="    &lt;string name=&quot;email_verification_sent&quot;>Lütfen e-posta adresinizi doğrulayın.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="26"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.email_verification_required` appears to be unused"
+        errorLine1="    &lt;string name=&quot;email_verification_required&quot;>E-posta doğrulaması gerekli&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="27"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.business_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;business_name&quot;>İşletme Adı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="30"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.phone_number` appears to be unused"
+        errorLine1="    &lt;string name=&quot;phone_number&quot;>Telefon Numarası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="31"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.address` appears to be unused"
+        errorLine1="    &lt;string name=&quot;address&quot;>Adres&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="32"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.tax_number` appears to be unused"
+        errorLine1="    &lt;string name=&quot;tax_number&quot;>Vergi Numarası (İsteğe Bağlı)&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="33"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password_info_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;password_info_title&quot;>Neden güçlü parola?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="38"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password_info_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;password_info_message&quot;>İşletmenizi ve müşteri verilerinizi güvende tutmak için en az 8 karakter, 1 büyük harf, 1 küçük harf ve 1 rakam içeren güçlü bir parola gerektiriyoruz.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="39"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.password_validation_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;password_validation_error&quot;>Parola en az 8 karakter, 1 büyük harf, 1 küçük harf ve 1 rakam içermelidir.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="41"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.home` appears to be unused"
+        errorLine1="    &lt;string name=&quot;home&quot;>Ana Sayfa&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="44"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.profile` appears to be unused"
+        errorLine1="    &lt;string name=&quot;profile&quot;>Profil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="45"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.matches` appears to be unused"
+        errorLine1="    &lt;string name=&quot;matches&quot;>Eşleşmeler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="46"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.messages` appears to be unused"
+        errorLine1="    &lt;string name=&quot;messages&quot;>Mesajlar&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="47"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.settings` appears to be unused"
+        errorLine1="    &lt;string name=&quot;settings&quot;>Ayarlar&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="48"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.edit_profile` appears to be unused"
+        errorLine1="    &lt;string name=&quot;edit_profile&quot;>Profili Düzenle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="51"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;name&quot;>İsim&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="52"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.age` appears to be unused"
+        errorLine1="    &lt;string name=&quot;age&quot;>Yaş&lt;/string>"
+        errorLine2="            ~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="53"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.bio` appears to be unused"
+        errorLine1="    &lt;string name=&quot;bio&quot;>Açıklama&lt;/string>"
+        errorLine2="            ~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="54"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.location` appears to be unused"
+        errorLine1="    &lt;string name=&quot;location&quot;>Konum&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="55"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.save` appears to be unused"
+        errorLine1="    &lt;string name=&quot;save&quot;>Kaydet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="56"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_matches` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_matches&quot;>Henüz eşleşme bulunamadı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="60"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.like` appears to be unused"
+        errorLine1="    &lt;string name=&quot;like&quot;>Beğen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="61"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dislike` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dislike&quot;>Beğenme&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="62"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.super_like` appears to be unused"
+        errorLine1="    &lt;string name=&quot;super_like&quot;>Süper Beğen&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="63"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_messages` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_messages&quot;>Henüz mesaj yok&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="66"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.type_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;type_message&quot;>Mesaj yazın...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="67"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.send` appears to be unused"
+        errorLine1="    &lt;string name=&quot;send&quot;>Gönder&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="68"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.language` appears to be unused"
+        errorLine1="    &lt;string name=&quot;language&quot;>Dil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="71"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.notifications` appears to be unused"
+        errorLine1="    &lt;string name=&quot;notifications&quot;>Bildirimler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="72"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.privacy` appears to be unused"
+        errorLine1="    &lt;string name=&quot;privacy&quot;>Gizlilik&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="73"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.about` appears to be unused"
+        errorLine1="    &lt;string name=&quot;about&quot;>Hakkında&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="74"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error&quot;>Hata&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="77"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;success&quot;>Başarılı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="78"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.ok` appears to be unused"
+        errorLine1="    &lt;string name=&quot;ok&quot;>Tamam&lt;/string>"
+        errorLine2="            ~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="79"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.back` appears to be unused"
+        errorLine1="    &lt;string name=&quot;back&quot;>Geri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="81"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.next` appears to be unused"
+        errorLine1="    &lt;string name=&quot;next&quot;>İleri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="82"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.done` appears to be unused"
+        errorLine1="    &lt;string name=&quot;done&quot;>Tamamlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="83"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_invalid_email` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_invalid_email&quot;>Geçersiz e-posta adresi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="88"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_invalid_password` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_invalid_password&quot;>Parola en az 6 karakter olmalıdır&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="89"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_passwords_not_match` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_passwords_not_match&quot;>Parolalar eşleşmiyor&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="90"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_network` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_network&quot;>Ağ hatası. Lütfen bağlantınızı kontrol edin.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="91"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_unknown` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_unknown&quot;>Bilinmeyen bir hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="92"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_field_required` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_field_required&quot;>Bu alan zorunludur&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="93"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.error_invalid_phone` appears to be unused"
+        errorLine1="    &lt;string name=&quot;error_invalid_phone&quot;>Geçersiz telefon numarası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="94"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.dont_have_account` appears to be unused"
+        errorLine1="    &lt;string name=&quot;dont_have_account&quot;>Hesabınız yok mu?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="98"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.create_account` appears to be unused"
+        errorLine1="    &lt;string name=&quot;create_account&quot;>Hesap Oluştur&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="99"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sign_in` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sign_in&quot;>Giriş Yap&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="100"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.enter_your_details` appears to be unused"
+        errorLine1="    &lt;string name=&quot;enter_your_details&quot;>Bilgilerinizi Girin&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="103"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.full_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;full_name&quot;>Ad Soyad&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="104"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.your_age` appears to be unused"
+        errorLine1="    &lt;string name=&quot;your_age&quot;>Yaşınız&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="105"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.about_you` appears to be unused"
+        errorLine1="    &lt;string name=&quot;about_you&quot;>Hakkınızda&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="106"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.tell_us_about_yourself` appears to be unused"
+        errorLine1="    &lt;string name=&quot;tell_us_about_yourself&quot;>Kendiniz hakkında bize anlatın&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="107"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.create_account_button` appears to be unused"
+        errorLine1="    &lt;string name=&quot;create_account_button&quot;>Kullanıcı Oluştur!&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="108"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sign_in_button` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sign_in_button&quot;>Giriş Yap&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="109"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.or` appears to be unused"
+        errorLine1="    &lt;string name=&quot;or&quot;>veya&lt;/string>"
+        errorLine2="            ~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="110"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.continue_with_google` appears to be unused"
+        errorLine1="    &lt;string name=&quot;continue_with_google&quot;>Google ile devam et&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="111"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.continue_with_facebook` appears to be unused"
+        errorLine1="    &lt;string name=&quot;continue_with_facebook&quot;>Facebook ile devam et&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="112"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.terms_and_conditions` appears to be unused"
+        errorLine1="    &lt;string name=&quot;terms_and_conditions&quot;>Kullanım şartları ve gizlilik politikası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="113"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.by_creating_account` appears to be unused"
+        errorLine1="    &lt;string name=&quot;by_creating_account&quot;>Hesap oluşturarak&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="114"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.you_agree` appears to be unused"
+        errorLine1="    &lt;string name=&quot;you_agree&quot;>kabul etmiş olursunuz&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="115"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customers` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customers&quot;>Müşteriler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="118"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_details` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_details&quot;>Müşteri Detayları&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="119"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.edit_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;edit_customer&quot;>Müşteri Düzenle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="120"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_customer&quot;>Müşteri Ekle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="121"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.delete_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;delete_customer&quot;>Müşteriyi Sil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="122"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.update_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;update_customer&quot;>Müşteriyi Güncelle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="123"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.first_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;first_name&quot;>Ad&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="124"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.last_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;last_name&quot;>Soyad&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="125"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.birth_date` appears to be unused"
+        errorLine1="    &lt;string name=&quot;birth_date&quot;>Doğum Tarihi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="126"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.gender` appears to be unused"
+        errorLine1="    &lt;string name=&quot;gender&quot;>Cinsiyet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="127"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.notes` appears to be unused"
+        errorLine1="    &lt;string name=&quot;notes&quot;>Notlar&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="128"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.file_number` appears to be unused"
+        errorLine1="    &lt;string name=&quot;file_number&quot;>Dosya Numarası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="129"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.personal_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;personal_info&quot;>Kişisel Bilgiler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="130"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.contact_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;contact_info&quot;>İletişim Bilgileri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="131"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.additional_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;additional_info&quot;>Ek Bilgiler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="132"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.record_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;record_info&quot;>Kayıt Bilgileri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="133"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.created_at` appears to be unused"
+        errorLine1="    &lt;string name=&quot;created_at&quot;>Kayıt Tarihi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="134"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.updated_at` appears to be unused"
+        errorLine1="    &lt;string name=&quot;updated_at&quot;>Son Güncelleme&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="135"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.loading_customers` appears to be unused"
+        errorLine1="    &lt;string name=&quot;loading_customers&quot;>Müşteriler yükleniyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="136"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.syncing_data` appears to be unused"
+        errorLine1="    &lt;string name=&quot;syncing_data&quot;>Veriler senkronize ediliyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="137"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sync_completed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sync_completed&quot;>Senkronizasyon tamamlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="138"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.processing` appears to be unused"
+        errorLine1="    &lt;string name=&quot;processing&quot;>İşlem yapılıyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="139"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.updating_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;updating_customer&quot;>Müşteri güncelleniyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="140"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.deleting_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;deleting_customer&quot;>Müşteri siliniyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="141"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_customers_found` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_customers_found&quot;>Henüz müşteri bulunmuyor&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="142"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_first_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_first_customer&quot;>İlk müşterinizi eklemek için + butonuna tıklayın&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="143"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.search_no_results` appears to be unused"
+        errorLine1="    &lt;string name=&quot;search_no_results&quot;>Arama sonucu bulunamadı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="144"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.delete_confirmation_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;delete_confirmation_title&quot;>Müşteriyi Sil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="145"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.delete_confirmation_message` appears to be unused"
+        errorLine1="    &lt;string name=&quot;delete_confirmation_message&quot;>%1$s adlı müşteriyi silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="146"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_saved_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_saved_success&quot;>%1$s başarılı bir şekilde kaydedildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="147"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_updated_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_updated_success&quot;>%1$s başarılı bir şekilde güncellendi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="148"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_deleted_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_deleted_success&quot;>%1$s başarılı bir şekilde silindi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="149"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.refresh` appears to be unused"
+        errorLine1="    &lt;string name=&quot;refresh&quot;>Yenile&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="150"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.edit` appears to be unused"
+        errorLine1="    &lt;string name=&quot;edit&quot;>Düzenle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="151"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.delete` appears to be unused"
+        errorLine1="    &lt;string name=&quot;delete&quot;>Sil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="152"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.update` appears to be unused"
+        errorLine1="    &lt;string name=&quot;update&quot;>Güncelle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="153"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.not_specified` appears to be unused"
+        errorLine1="    &lt;string name=&quot;not_specified&quot;>Belirtilmemiş&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="154"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.male` appears to be unused"
+        errorLine1="    &lt;string name=&quot;male&quot;>Erkek&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="155"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.female` appears to be unused"
+        errorLine1="    &lt;string name=&quot;female&quot;>Kadın&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="156"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.other` appears to be unused"
+        errorLine1="    &lt;string name=&quot;other&quot;>Diğer&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="157"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.optional` appears to be unused"
+        errorLine1="    &lt;string name=&quot;optional&quot;>Opsiyonel&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="158"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.notes_placeholder` appears to be unused"
+        errorLine1="    &lt;string name=&quot;notes_placeholder&quot;>Müşteri ile ilgili notlarınızı ekleyin&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="159"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sync_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sync_success&quot;>Veriler başarıyla senkronize edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="160"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.sync_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;sync_error&quot;>Senkronizasyon hatası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="161"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_loading_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_loading_error&quot;>Müşteri bilgileri yüklenirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="162"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_save_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_save_error&quot;>Müşteri kaydedilirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="163"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_update_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_update_error&quot;>Müşteri güncellenirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="164"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_delete_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_delete_error&quot;>Müşteri silinirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="165"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.authentication_required` appears to be unused"
+        errorLine1="    &lt;string name=&quot;authentication_required&quot;>Kullanıcı oturumu gerekli. Lütfen giriş yapın.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="166"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.user_info_loading` appears to be unused"
+        errorLine1="    &lt;string name=&quot;user_info_loading&quot;>Kullanıcı bilgileri yükleniyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="167"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointments` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointments&quot;>Randevular&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="170"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.calendar` appears to be unused"
+        errorLine1="    &lt;string name=&quot;calendar&quot;>Takvim&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="171"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.visits` appears to be unused"
+        errorLine1="    &lt;string name=&quot;visits&quot;>Randevular&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="172"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.create_first_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;create_first_appointment&quot;>İlk Randevuyu Oluştur&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="173"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment&quot;>Randevu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="174"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.add_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;add_appointment&quot;>Randevu Ekle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="175"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.new_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;new_appointment&quot;>Yeni Randevu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="176"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_details` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_details&quot;>Randevu Detayları&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="177"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_date` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_date&quot;>Randevu Tarihi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="178"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_time` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_time&quot;>Randevu Saati&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="179"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_status` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_status&quot;>Randevu Durumu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="180"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_notes` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_notes&quot;>Randevu Notları&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="181"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.create_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;create_appointment&quot;>Randevu Oluştur&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="182"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.update_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;update_appointment&quot;>Randevu Güncelle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="183"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.delete_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;delete_appointment&quot;>Randevu Sil&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="184"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.cancel_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;cancel_appointment&quot;>Randevu İptal Et&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="185"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.complete_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;complete_appointment&quot;>Randevu Tamamla&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="186"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_created` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_created&quot;>Randevu başarıyla oluşturuldu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="187"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_updated` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_updated&quot;>Randevu başarıyla güncellendi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="188"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_deleted` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_deleted&quot;>Randevu başarıyla silindi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="189"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_cancelled` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_cancelled&quot;>Randevu iptal edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="190"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_completed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_completed&quot;>Randevu tamamlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="191"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_no_show` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_no_show&quot;>Müşteri gelmedi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="192"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_loading` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_loading&quot;>Randevular yükleniyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="193"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_error&quot;>Randevu işleminde hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="194"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_save_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_save_error&quot;>Randevu kaydedilirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="195"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_delete_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_delete_error&quot;>Randevu silinirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="196"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_update_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_update_error&quot;>Randevu güncellenirken hata oluştu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="197"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_appointments` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_appointments&quot;>Henüz randevu eklenmemiş&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="198"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_search_hint` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_search_hint&quot;>Müşteri adı, telefon veya hizmet ara...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="199"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_filter_all` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_filter_all&quot;>Tümü&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="200"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_status_scheduled` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_status_scheduled&quot;>Planlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="201"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_status_completed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_status_completed&quot;>Tamamlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="202"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_status_cancelled` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_status_cancelled&quot;>İptal Edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="203"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_status_no_show` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_status_no_show&quot;>Gelmedi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="204"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.select_customer` appears to be unused"
+        errorLine1="    &lt;string name=&quot;select_customer&quot;>Müşteri Seçin&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="205"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.select_date` appears to be unused"
+        errorLine1="    &lt;string name=&quot;select_date&quot;>Tarih Seçiniz&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="206"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.select_time` appears to be unused"
+        errorLine1="    &lt;string name=&quot;select_time&quot;>Saat Seçiniz&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="207"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.service_name` appears to be unused"
+        errorLine1="    &lt;string name=&quot;service_name&quot;>Hizmet Adı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="208"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.service_price` appears to be unused"
+        errorLine1="    &lt;string name=&quot;service_price&quot;>Hizmet Fiyatı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="209"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.customer_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;customer_info&quot;>Müşteri Bilgileri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="210"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.service_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;service_info&quot;>Hizmet Bilgileri&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="211"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.date_time_info` appears to be unused"
+        errorLine1="    &lt;string name=&quot;date_time_info&quot;>Tarih ve Saat&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="212"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_confirm_delete` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_confirm_delete&quot;>Bu randevuyu silmek istediğinizden emin misiniz? Bu işlem geri alınamaz.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="213"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_actions` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_actions&quot;>İşlemler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="214"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_sync` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_sync&quot;>Randevular senkronize ediliyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="215"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_sync_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_sync_success&quot;>Randevular başarıyla senkronize edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="216"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.appointment_sync_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;appointment_sync_error&quot;>Randevu senkronizasyon hatası&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="217"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.no_search_results` appears to be unused"
+        errorLine1="    &lt;string name=&quot;no_search_results&quot;>Arama kriterinize uygun randevu bulunamadı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="218"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.clear_filters` appears to be unused"
+        errorLine1="    &lt;string name=&quot;clear_filters&quot;>Filtreleri Temizle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="219"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.creating_appointment` appears to be unused"
+        errorLine1="    &lt;string name=&quot;creating_appointment&quot;>Randevu oluşturuluyor...&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="220"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.fill_required_fields` appears to be unused"
+        errorLine1="    &lt;string name=&quot;fill_required_fields&quot;>Lütfen tüm gerekli alanları doldurun&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="221"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_reset` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_reset&quot;>Varsayılana Döndür&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="225"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_sync` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_sync&quot;>Senkronize Et&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="226"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_apply_all` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_apply_all&quot;>Tüm Günlere Uygula&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="227"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_apply_weekdays` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_apply_weekdays&quot;>Hafta İçi Günlere Uygula&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="228"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_apply_all_dialog_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_apply_all_dialog_desc&quot;>Seçeceğiniz çalışma saatlerini tüm günlere uygulamak istediğinizden emin misiniz?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="230"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_apply_weekdays_dialog_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_apply_weekdays_dialog_desc&quot;>Seçeceğiniz çalışma saatlerini sadece hafta içi günlere (Pazartesi-Cuma) uygulamak istediğinizden emin misiniz?&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="232"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_reset_confirm_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_reset_confirm_desc&quot;>Tüm çalışma saatlerini varsayılan ayarlara döndürmek istediğinizden emin misiniz? Bu işlem geri alınamaz.&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="236"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_open` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_open&quot;>Açık&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="237"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_closed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_closed&quot;>Kapalı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="238"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_edit_desc` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_edit_desc&quot;>Bu günün çalışma saatlerini düzenleyin&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="240"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_status_open` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_status_open&quot; formatted=&quot;false&quot;>%s - %s&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="249"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_status_closed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_status_closed&quot;>Kapalı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="250"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_save_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_save_success&quot;>Çalışma saatleri başarıyla kaydedildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="251"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_sync_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_sync_success&quot;>Çalışma saatleri senkronize edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="252"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.working_hours_validation_error` appears to be unused"
+        errorLine1="    &lt;string name=&quot;working_hours_validation_error&quot;>Açılış saati kapanış saatinden önce olmalıdır&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="253"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.toast_sync_success` appears to be unused"
+        errorLine1="    &lt;string name=&quot;toast_sync_success&quot;>Çalışma saatleri senkronize edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="259"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_title` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_title&quot;>Finans Yönetimi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="276"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_summary` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_summary&quot;>Finansal Özet&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="277"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_credit_card` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_credit_card&quot;>Kredi Kartı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="278"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_cash` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_cash&quot;>Nakit&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="279"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_total_revenue` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_total_revenue&quot;>Toplam Gelir&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="280"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_payment_method` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_payment_method&quot;>Ödeme Yöntemi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="281"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_payment_status` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_payment_status&quot;>Ödeme Durumu&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="282"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_transaction_type` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_transaction_type&quot;>İşlem Türü&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="283"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_date_range` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_date_range&quot;>Tarih Aralığı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="284"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_start_date` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_start_date&quot;>Başlangıç Tarihi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="285"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_end_date` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_end_date&quot;>Bitiş Tarihi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="286"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_search` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_search&quot;>Arama&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="287"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_filters` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_filters&quot;>Filtreler&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="288"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_clear_filters` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_clear_filters&quot;>Filtreleri Temizle&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="289"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_remove_date_filter` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_remove_date_filter&quot;>Tarih Filtresini Kaldır&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="290"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_all` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_all&quot;>Tümü&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="291"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.payment_status_pending` appears to be unused"
+        errorLine1="    &lt;string name=&quot;payment_status_pending&quot;>Beklemede&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="294"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.payment_status_completed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;payment_status_completed&quot;>Tamamlandı&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="295"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.payment_status_failed` appears to be unused"
+        errorLine1="    &lt;string name=&quot;payment_status_failed&quot;>Başarısız&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="296"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.payment_status_refunded` appears to be unused"
+        errorLine1="    &lt;string name=&quot;payment_status_refunded&quot;>İade Edildi&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="297"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.transaction_type_income` appears to be unused"
+        errorLine1="    &lt;string name=&quot;transaction_type_income&quot;>Gelir&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="300"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.transaction_type_expense` appears to be unused"
+        errorLine1="    &lt;string name=&quot;transaction_type_expense&quot;>Gider&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="301"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_no_credit_payments` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_no_credit_payments&quot;>Henüz kredi kartı ödemesi bulunmuyor&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="304"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="UnusedResources"
+        message="The resource `R.string.finance_no_cash_transactions` appears to be unused"
+        errorLine1="    &lt;string name=&quot;finance_no_cash_transactions&quot;>Henüz nakit işlemi bulunmuyor&lt;/string>"
+        errorLine2="            ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="src/main/res/values/strings.xml"
+            line="305"
+            column="13"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/logo.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/logo.png"/>
+    </issue>
+
+    <issue
+        id="IconLocation"
+        message="Found bitmap drawable `res/drawable/logo_png.png` in densityless folder">
+        <location
+            file="src/main/res/drawable/logo_png.png"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    implementation(&quot;com.google.accompanist:accompanist-swiperefresh:0.36.0&quot;)"
+        errorLine2="                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="172"
+            column="20"/>
+    </issue>
+
+    <issue
+        id="UseTomlInstead"
+        message="Use version catalog instead"
+        errorLine1="    coreLibraryDesugaring(&quot;com.android.tools:desugar_jdk_libs:2.0.4&quot;)"
+        errorLine2="                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~">
+        <location
+            file="build.gradle.kts"
+            line="175"
+            column="27"/>
+    </issue>
+
+</issues>

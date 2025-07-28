@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BeautyDate</string>
+    
+    <!-- Welcome Screen -->
+    <string name="welcome_title">BeautyDate\'e Hoş Geldiniz</string>
+    <string name="loading">Yükleniyor...</string>
+    
+    <!-- Authentication -->
+    <string name="login">Giriş Yap</string>
+    <string name="register">Kullanıcı Oluştur</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="logout">Çıkış Yap</string>
+    <string name="welcome_message">BeautyDate\'e Hoş Geldiniz</string>
+    <string name="remember_username">Kullanıcı Adını Hatırla</string>
+    <string name="password_helper_text">En az 8 karakter, 1 büyük harf, 1 küçük harf, 1 rakam.</string>
+    <string name="already_have_account">Zaten üye misiniz?</string>
+    <string name="join_beautydate">İşletme Profilinizi Oluşturun</string>
+    <string name="create_your_profile">Profilinizi Oluşturun</string>
+    <string name="account_details">Hesap Bilgileri</string>
+    <string name="business_details">İşletme Bilgileri</string>
+    
+    <!-- Working Hours -->
+    <string name="working_hours_title">Çalışma Saatlerimiz</string>
+    <string name="working_hours_apply_weekdays_weekend_closed">Hafta İçi</string>
+    <string name="working_hours_apply_weekdays_weekend_open_without_sunday">Hafta İçi</string>
+    <string name="working_hours_apply_weekdays_weekend_open">Hafta İçi</string>
+    <string name="working_hours_apply_weekdays_dialog_desc_weekend_closed">Seçeceğiniz çalışma saatlerini sadece hafta içi günlere (Pazartesi-Cuma) uygulamak istediğinizden emin misiniz? Hafta sonu kapalı kalacak.</string>
+    <string name="working_hours_apply_weekdays_dialog_desc_weekend_open">Seçeceğiniz çalışma saatlerini sadece hafta içi günlere (Pazartesi-Cuma) uygulamak istediğinizden emin misiniz? Hafta sonu açık kalacak (Pazar hariç).</string>
+    <string name="working_hours_edit_title">%s Çalışma Saatleri</string>
+    <string name="working_hours_is_open">Bugün açık</string>
+    <string name="working_hours_start_time">Açılış Saati</string>
+    <string name="working_hours_end_time">Kapanış Saati</string>
+    <string name="working_hours_reset_confirm_title">Varsayılana Döndür</string>
+    <string name="working_hours_reset_confirm_desc_updated">Tüm çalışma saatlerini varsayılan ayarlara döndürmek istediğinizden emin misiniz? (Pazar günü kapalı kalacak) Bu işlem geri alınamaz.</string>
+    <string name="working_hours_apply_all_dialog_title">Tüm Günlere Uygula</string>
+    <string name="working_hours_apply_all_dialog_desc_updated">Seçeceğiniz çalışma saatlerini tüm günlere uygulamak istediğinizden emin misiniz? (Pazar günü kapalı kalacak)</string>
+    <string name="working_hours_apply_weekdays_dialog_title">Hafta İçi Günlere Uygula</string>
+    <string name="working_hours_monday">Pazartesi</string>
+    <string name="working_hours_tuesday">Salı</string>
+    <string name="working_hours_wednesday">Çarşamba</string>
+    <string name="working_hours_thursday">Perşembe</string>
+    <string name="working_hours_friday">Cuma</string>
+    <string name="working_hours_saturday">Cumartesi</string>
+    <string name="working_hours_sunday">Pazar</string>
+    
+    <!-- Toast Messages -->
+    <string name="toast_day_opened">%s açık duruma getirildi</string>
+    <string name="toast_day_closed">%s kapalı duruma getirildi</string>
+    <string name="toast_hours_updated">%s çalışma saatleri güncellendi</string>
+    <string name="toast_apply_all_success">Tüm günlere uygulandı (Pazar hariç)</string>
+    <string name="toast_apply_weekdays_success">Hafta içi günlere uygulandı</string>
+    <string name="toast_reset_success">Varsayılan ayarlara döndürüldü</string>
+    
+    <!-- Common -->
+    <string name="retry">Tekrar Dene</string>
+    <string name="apply">Uygula</string>
+    <string name="cancel">İptal</string>
+    <string name="close">Kapat</string>
+    <string name="info">Bilgi</string>
+</resources> 
