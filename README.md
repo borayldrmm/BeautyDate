@@ -4,7 +4,7 @@
 
 ---
 
-## 👥 For Users (English)
+## 👥 For Users
 
 **BeautyDate** is a modern mobile app designed for beauty salons.  
 It helps you manage your customers, appointments, services, staff, and financial records — all in one place, without needing any technical knowledge.
@@ -20,7 +20,7 @@ It helps you manage your customers, appointments, services, staff, and financial
 
 ---
 
-## 👨‍💻 For Developers (English)
+## 👨‍💻 For Developers
 
 **BeautyDate** is a multi-tenant, Firebase-powered mobile appointment management app for beauty salons. Built with Jetpack Compose, MVVM, and SOLID principles, it allows salon businesses to securely manage clients, appointments, services, employees, and financial records in real-time.
 
@@ -41,7 +41,7 @@ It helps you manage your customers, appointments, services, staff, and financial
 
 ---
 
-## 👥 Kullanıcılar İçin (Türkçe)
+## 👥 Kullanıcılar İçin
 
 **BeautyDate**, güzellik salonları için geliştirilmiş modern bir mobil uygulamadır.  
 Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışanlarınızı ve finansal kayıtlarınızı teknik bilgi gerekmeden kolayca yönetmenizi sağlar.
@@ -57,7 +57,7 @@ Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışan
 
 ---
 
-## 👨‍💻 Geliştiriciler İçin (Türkçe)
+## 👨‍💻 Geliştiriciler İçin
 
 **BeautyDate**, güzellik salonlarına yönelik olarak geliştirilen, Firebase destekli çok işletmeli bir mobil randevu yönetim uygulamasıdır. Jetpack Compose, MVVM ve SOLID prensiplerine göre inşa edilmiştir ve gerçek zamanlı olarak müşteri, randevu, hizmet, çalışan ve finansal verilerin güvenli şekilde yönetilmesini sağlar.
 
