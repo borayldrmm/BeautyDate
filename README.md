@@ -150,17 +150,17 @@ Feel free to clone, review, or contribute. Your feedback is welcome!
 
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2580e1c0-e529-44e5-9527-0d39622a944d" alt="android" width="40" />
-  <img src="https://github.com/user-attachments/assets/5814cb0b-c23d-41c5-9669-4e1b50942010" alt="androidstudio" width="40" />
-  <img src="https://github.com/user-attachments/assets/c8b96971-4656-45d5-bcfe-31a9f3112084" alt="room" width="40" />
-  <img src="https://github.com/user-attachments/assets/a617cf09-4f93-4697-8c1c-b12df6f9fcc1" alt="authentication" width="40" />
-  <img src="https://github.com/user-attachments/assets/122caa9d-410b-47c9-a3f9-51b379fcf649" alt="coroutines" width="40" />
-  <img src="https://github.com/user-attachments/assets/2275f8fc-1ab8-44b2-9ce7-80bf83febe89" alt="firebase" width="40" />
-  <img src="https://github.com/user-attachments/assets/d319d689-ff2f-4519-80a2-34d334f23510" alt="firebase-storage" width="40" />
-  <img src="https://github.com/user-attachments/assets/26fbaf47-59ab-4832-988f-3602be2d7006" alt="jetpack_compose" width="40" />
-  <img src="https://github.com/user-attachments/assets/906227a6-6c7d-437d-9133-cc4fff17e6d0" alt="json" width="40" />
-  <img src="https://github.com/user-attachments/assets/41747e93-5cc8-4831-886e-fefd96832c65" alt="kotlin" width="40" />
-  <img src="https://github.com/user-attachments/assets/c838a38b-749d-4106-95f5-256cb943d70a" alt="mvvm" width="40" />
-  <img src="https://github.com/user-attachments/assets/af5ed77a-c07e-4c1c-b79f-5edd3a18dd8e" alt="hilt" width="40" />
-  <img src="https://github.com/user-attachments/assets/b69c4ac9-7998-4339-83ab-21e54e3c7312" alt="coil" width="40" />
+  <img src="https://github.com/user-attachments/assets/2580e1c0-e529-44e5-9527-0d39622a944d" alt="android" width="50" />
+  <img src="https://github.com/user-attachments/assets/5814cb0b-c23d-41c5-9669-4e1b50942010" alt="androidstudio" width="50" />
+  <img src="https://github.com/user-attachments/assets/c8b96971-4656-45d5-bcfe-31a9f3112084" alt="room" width="50" />
+  <img src="https://github.com/user-attachments/assets/a617cf09-4f93-4697-8c1c-b12df6f9fcc1" alt="authentication" width="50" />
+  <img src="https://github.com/user-attachments/assets/122caa9d-410b-47c9-a3f9-51b379fcf649" alt="coroutines" width="50" />
+  <img src="https://github.com/user-attachments/assets/2275f8fc-1ab8-44b2-9ce7-80bf83febe89" alt="firebase" width="50" />
+  <img src="https://github.com/user-attachments/assets/d319d689-ff2f-4519-80a2-34d334f23510" alt="firebase-storage" width="50" />
+  <img src="https://github.com/user-attachments/assets/26fbaf47-59ab-4832-988f-3602be2d7006" alt="jetpack_compose" width="50" />
+  <img src="https://github.com/user-attachments/assets/906227a6-6c7d-437d-9133-cc4fff17e6d0" alt="json" width="50" />
+  <img src="https://github.com/user-attachments/assets/41747e93-5cc8-4831-886e-fefd96832c65" alt="kotlin" width="50" />
+  <img src="https://github.com/user-attachments/assets/c838a38b-749d-4106-95f5-256cb943d70a" alt="mvvm" width="50" />
+  <img src="https://github.com/user-attachments/assets/af5ed77a-c07e-4c1c-b79f-5edd3a18dd8e" alt="hilt" width="50" />
+  <img src="https://github.com/user-attachments/assets/b69c4ac9-7998-4339-83ab-21e54e3c7312" alt="coil" width="50" />
 </p>
