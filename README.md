@@ -1,6 +1,13 @@
 ---
 
+
 ## 🧾 Introduction - Project Overview
+
+---
+
+## 🧾 Project Documentation
+ 
+[BeautyDate Dokümantasyon.pdf](https://github.com/user-attachments/files/21497323/BeautyDate.Dokumantasyon.pdf)
 
 ---
 
