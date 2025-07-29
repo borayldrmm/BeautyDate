@@ -12,7 +12,7 @@ It helps you manage your customers, appointments, services, staff, and financial
 - 📲 **Sign Up & Login:** You can easily register with your email and password, and securely log in.  
 - 👤 **Customer Management:** Add customers, track their visit history, and attach notes to their profiles.  
 - 📅 **Appointment Scheduling:** Quickly book appointments by selecting a date, time, service, and staff.  
-- 🧑‍💼 **Staff Tracking:** See which employee provides which service and how many appointments they have.  
+- 🧑‍💼 **Staff Tracking:** Track and manage your employees. 
 - 💇‍♀️ **Services:** List your offered services (like manicure, massage, laser, etc.) and set their prices.  
 - 📊 **Statistics:** Understand your busiest days, most popular services, and overall performance.  
 - 💸 **Finance Management:** Monitor income and expenses to better understand your business performance.  
@@ -49,7 +49,7 @@ Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışan
 - 📲 **Kayıt Ol & Giriş Yap:** E-posta ve şifre ile kolayca kayıt olabilir, güvenli şekilde giriş yapabilirsiniz.  
 - 👤 **Müşteri Yönetimi:** Müşteri ekleyebilir, geçmiş ziyaretlerini takip edebilir ve profil notları ekleyebilirsiniz.  
 - 📅 **Randevu Planlama:** Tarih, saat, hizmet ve personel seçerek hızlıca randevu oluşturabilirsiniz.  
-- 🧑‍💼 **Çalışan Takibi:** Hangi çalışan hangi hizmeti veriyor ve kaç randevusu var görebilirsiniz.  
+- 🧑‍💼 **Çalışan Takibi:** Çalışanlarınızı takip edebilir, yönetebilir ve güncelleyebilirsiniz.  
 - 💇‍♀️ **Hizmetler:** Manikür, masaj, lazer gibi hizmetleri listeleyebilir, fiyatlarını belirleyebilirsiniz.  
 - 📊 **İstatistik:** En yoğun günleri, en çok tercih edilen hizmetleri ve genel performansı analiz edebilirsiniz.  
 - 💸 **Finans Yönetimi:** Gelir ve giderleri takip ederek işletme performansınızı ölçebilirsiniz.  
@@ -66,11 +66,214 @@ Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışan
 - 🕡 **Randevu Sistemi:** Randevular oluşturulabilir, tamamlanmış/iptal edilmiş/güncel olarak kategorize edilir ve filtrelenebilir.  
 - 🧱 **Hizmet & Personel Modülü:** Hizmet ve çalışanlar modüler şekilde atanabilir ve yönetilebilir.  
 - 💳 **Finans & Gider Takibi:** Gelir, gider, işlem verileri izlenebilir, analiz ve grafiklerle desteklenir.  
-- 🌐 **Dil Desteği:** strings.xml ve dinamik LocaleHelper ile İngilizce/Türkçe dil desteği.  
+- 🌐 **Dil Desteği:** strings.xml ve dinamik LocaleHelper ile İngilizce/Türkçe dil desteği için hazırlık. 
 - 💪 **Güvenlik Kuralları:** Firebase Firestore'da çok işletmeli kullanıcı izolasyonu sağlayan güvenlik kuralları.  
 - ❌ **Hesap Silme:** Profil ayarlarından tam entegre hesap silme özelliği.
 
 > Uygulama; Repository, ViewModel, UI State ayrımı ve reaktif veri akışı gibi ölçeklenebilir yapı kalıplarını takip eder.
+
+
+---
+
+## 🏗️ Project Structure Map
+
+```groovy
+// 🗺️ BeautyDate - Project Structure Map (Emoji Enhanced)
+
+📁 app/src/main/java/com/example/beautydate/
+├── 📄 BeautyDateApplication.kt
+├── 📄 MainActivity.kt
+│
+├── 🧩 components/
+│   ├── 🧱 ActionCard.kt
+│   ├── 🧱 AppointmentCard.kt
+│   ├── 🧱 AppointmentColorLegend.kt
+│   ├── 🧱 AppointmentDetailBottomSheet.kt
+│   ├── 🧱 AppointmentFab.kt
+│   ├── 🧱 AppointmentFilterChips.kt
+│   ├── 🧱 AppointmentSearchBar.kt
+│   ├── 🧱 AuthComponents.kt
+│   ├── 🧱 BottomNavigationBar.kt
+│   ├── 🧱 CommonComponents.kt
+│   ├── 🧱 CustomerAppointmentHistoryBottomSheet.kt
+│   ├── 🧱 CustomerDropdownSelector.kt
+│   ├── 🧱 CustomerFab.kt
+│   ├── 🧱 CustomerItem.kt
+│   ├── 🧱 CustomerSearchBar.kt
+│   ├── 🧱 DayScheduleCard.kt
+│   ├── 🧱 OtherMenuItem.kt
+│   ├── 🧱 PasswordField.kt
+│   ├── 🧱 PasswordFieldWithInfo.kt
+│   ├── 🧱 PaymentMethodBottomSheet.kt
+│   ├── 🧱 ServiceFab.kt
+│   └── 🧱 ThemeSelector.kt
+│
+├── 🧠 data/
+│   ├── 🗺️ CityDistrictData.kt
+│   ├── 🗂️ local/
+│   │   ├── 📄 AppointmentEntity.kt
+│   │   ├── 📄 CustomerDao.kt
+│   │   ├── 📄 CustomerDatabase.kt
+│   │   ├── 📄 CustomerEntity.kt
+│   │   ├── 📄 CustomerNoteDao.kt
+│   │   ├── 📄 CustomerNoteEntity.kt
+│   │   ├── 📄 DateTimeConverter.kt
+│   │   ├── 📄 EmployeeDao.kt
+│   │   ├── 📄 EmployeeEntity.kt
+│   │   ├── 📄 ServiceDao.kt
+│   │   ├── 📄 ServiceEntity.kt
+│   │   ├── 📄 ThemePreferences.kt
+│   │   ├── 📄 TutorialPreferences.kt
+│   │   └── 📄 UserPreferences.kt
+│   ├── 🔧 dao/
+│   │   ├── 📄 AppointmentDao.kt
+│   │   ├── 📄 ExpenseDao.kt
+│   │   ├── 📄 PaymentDao.kt
+│   │   ├── 📄 TransactionDao.kt
+│   │   └── 📄 WorkingHoursDao.kt
+│   ├── 📦 entities/
+│   │   ├── 📄 ExpenseEntity.kt
+│   │   ├── 📄 PaymentEntity.kt
+│   │   ├── 📄 TransactionEntity.kt
+│   │   └── 📄 WorkingHoursEntity.kt
+│   ├── 🧾 models/
+│   │   ├── 📄 Appointment.kt
+│   │   ├── 📄 Customer.kt
+│   │   ├── 📄 CustomerFirestore.kt
+│   │   ├── 📄 CustomerNote.kt
+│   │   ├── 📄 DayHours.kt
+│   │   ├── 📄 DayOfWeek.kt
+│   │   ├── 📄 Employee.kt
+│   │   ├── 📄 EmployeeFirestore.kt
+│   │   ├── 📄 Expense.kt
+│   │   ├── 📄 ExpenseCategory.kt
+│   │   ├── 📄 ExpenseFirestore.kt
+│   │   ├── 📄 Payment.kt
+│   │   ├── 📄 PaymentFirestore.kt
+│   │   ├── 📄 Service.kt
+│   │   ├── 📄 ServiceCategory.kt
+│   │   ├── 📄 ServiceFirestore.kt
+│   │   ├── 📄 Statistics.kt
+│   │   ├── 📄 Transaction.kt
+│   │   ├── 📄 TransactionFirestore.kt
+│   │   ├── 📄 Tutorial.kt
+│   │   ├── 📄 User.kt
+│   │   └── 📄 WorkingHours.kt
+│   ├── ☁️ remote/models/
+│   │   ├── 📄 AppointmentFirestore.kt
+│   │   ├── 📄 CustomerNoteFirestore.kt
+│   │   └── 📄 WorkingHoursFirestore.kt
+│   └── 📚 repository/
+│       ├── 📄 AppointmentRepository.kt
+│       ├── 📄 AppointmentRepositoryImpl.kt
+│       ├── 📄 AuthRepository.kt
+│       ├── 📄 CustomerNoteRepository.kt
+│       ├── 📄 CustomerNoteRepositoryImpl.kt
+│       ├── 📄 CustomerRepository.kt
+│       ├── 📄 EmployeeRepository.kt
+│       ├── 📄 EmployeeRepositoryImpl.kt
+│       ├── 📄 ExpenseRepository.kt
+│       ├── 📄 ExpenseRepositoryImpl.kt
+│       ├── 📄 FeedbackRepository.kt
+│       ├── 📄 PaymentRepository.kt
+│       ├── 📄 ServiceRepository.kt
+│       ├── 📄 ServiceRepositoryImpl.kt
+│       ├── 📄 StatisticsRepository.kt
+│       ├── 📄 StatisticsRepositoryImpl.kt
+│       ├── 📄 ThemeRepository.kt
+│       ├── 📄 TransactionRepository.kt
+│       ├── 📄 TransactionRepositoryImpl.kt
+│       ├── 📄 TutorialRepository.kt
+│       ├── 📄 TutorialRepositoryImpl.kt
+│       ├── 📄 WorkingHoursRepository.kt
+│       └── 📄 WorkingHoursRepositoryImpl.kt
+│
+├── 🧪 di/
+│   ├── 📄 AppModule.kt
+│   └── 📄 RepositoryModule.kt
+│
+├── 🔁 domain/
+│   ├── 📋 models/
+│   │   ├── 📄 FeedbackData.kt
+│   │   └── 📄 OtherMenuItem.kt
+│   └── 💡 usecases/
+│       ├── 📄 FeedbackUseCase.kt
+│       ├── 📄 LoginUseCase.kt
+│       ├── 📄 RegisterUseCase.kt
+│       ├── 📄 ThemeUseCase.kt
+│       ├── appointment/
+│       │   ├── 📄 AddAppointmentUseCase.kt
+│       │   ├── 📄 GetAppointmentsUseCase.kt
+│       │   └── 📄 UpdateAppointmentStatusUseCase.kt
+│       └── customer/
+│           ├── 📄 AddCustomerUseCase.kt
+│           ├── 📄 GetCustomersUseCase.kt
+│           └── 📄 SyncCustomersUseCase.kt
+│
+├── 🧭 navigation/
+│   ├── 📄 AppNavigation.kt
+│   └── 📄 BottomNavigationItem.kt
+│
+├── 📱 screens/
+│   └── 📄 ... (tüm ekranlar üstte listelendi)
+│
+├── 🎨 ui/theme/
+│   ├── 🎨 Color.kt
+│   ├── 🎨 Theme.kt
+│   └── 🎨 Type.kt
+│
+├── 🧰 utils/
+│   ├── 🔒 AuthUtil.kt
+│   ├── 🌐 NetworkMonitor.kt
+│   ├── 🔁 PaginationHelper.kt
+│   ├── 🔐 PasswordValidator.kt
+│   ├── ☎️ PhoneNumberTransformation.kt
+│   ├── 📝 RegisterUtils.kt
+│   ├── ✅ RegisterValidation.kt
+│   ├── 📦 RepositoryCache.kt
+│   ├── ⏳ SearchDebouncer.kt
+│   ├── 🔔 ToastUtils.kt
+│   └── 🧪 ValidationUtils.kt
+│
+├── 📏 utils/validation/
+│   └── 📄 AuthValidator.kt
+│
+└── 🧠 viewmodels/
+    ├── 📄 AppointmentViewModel.kt
+    ├── 📄 AuthViewModel.kt
+    ├── 📄 CalendarViewModel.kt
+    ├── 📄 CustomerNoteViewModel.kt
+    ├── 📄 CustomerViewModel.kt
+    ├── 📄 EmployeeViewModel.kt
+    ├── 📄 ExpenseViewModel.kt
+    ├── 📄 FeedbackViewModel.kt
+    ├── 📄 FinanceViewModel.kt
+    ├── 📄 OtherMenuViewModel.kt
+    ├── 📄 ServiceViewModel.kt
+    ├── 📄 StatisticsViewModel.kt
+    ├── 📄 ThemeViewModel.kt
+    ├── 📄 TutorialViewModel.kt
+    ├── 📄 WorkingHoursViewModel.kt
+    ├── 🎬 actions/
+    │   ├── 📄 AuthActions.kt
+    │   ├── 📄 FeedbackActions.kt
+    │   ├── 📄 ServiceActions.kt
+    │   └── 📄 ThemeActions.kt
+    └── 📊 state/
+        ├── 📄 AppointmentUiState.kt
+        ├── 📄 AuthUiState.kt
+        ├── 📄 CalendarUiState.kt
+        ├── 📄 CustomerNoteUiState.kt
+        ├── 📄 CustomerUiState.kt
+        ├── 📄 EmployeeUiState.kt
+        ├── 📄 FeedbackUiState.kt
+        ├── 📄 OtherMenuState.kt
+        ├── 📄 ServiceUiState.kt
+        ├── 📄 StatisticsUiState.kt
+        ├── 📄 ThemeState.kt
+        ├── 📄 TutorialUiState.kt
+        └── 📄 WorkingHoursUiState.kt
+```
 
 ---
 
