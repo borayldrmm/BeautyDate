@@ -78,7 +78,7 @@ Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışan
 ## 🏗️ Project Structure Map
 
 ```groovy
-// 🗺️ BeautyDate - Project Structure Map (Emoji Enhanced)
+// 🗺️ BeautyDate - Project Structure Map
 
 📁 app/src/main/java/com/example/beautydate/
 ├── 📄 BeautyDateApplication.kt
