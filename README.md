@@ -80,7 +80,7 @@ Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışan
 ```groovy
 // 🗺️ BeautyDate - Project Structure Map
 
-📁 app/src/main/java/com/example/beautydate/
+📁 app/src/main/java/com/borayildirim/beautydate/
 ├── 📄 BeautyDateApplication.kt
 ├── 📄 MainActivity.kt
 │
