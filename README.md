@@ -1,6 +1,6 @@
-# BeautyDate
 
 <p align="center">
+  # BeautyDate
   <img width="512" height="512" alt="beautydade_icon" src="https://github.com/user-attachments/assets/374c0951-9b0f-49f8-a03a-710e0cfba809" />
 </p>
 
