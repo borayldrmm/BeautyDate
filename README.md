@@ -1,7 +1,4 @@
-
-<p align="center">
-  <img width="512" height="512" alt="beautydade_icon" src="https://github.com/user-attachments/assets/374c0951-9b0f-49f8-a03a-710e0cfba809" />
-</p>
+<img width="1000" height="1000" alt="logo_png" src="https://github.com/user-attachments/assets/51bbc41f-3796-4654-808d-fcf2c851ffb3" />
 
 ---
 
