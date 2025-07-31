@@ -317,7 +317,7 @@
 
 Bu proje, Kotlin ile Android geliştirme yolculuğumun bir parçası olarak inşa edildi. Uygulamayı yaparken amacım temiz kodlama ve solid prensiplerine uyumluluk, ölçeklenebilir ve modern mimari, kullanılabilirlik, sürdürülebilirlik ve modern tasarım ilkelerine odaklanmaktı. **BeautyDate**, oluşturulurken sadece fonksiyonel bir uygulama değil — gerçek işletmeler için eksiksiz bir salon yönetim aracı olarak kullanılması düşünülmüştür. Projeyi klonlayabilir, inceleyebilir veya katkı sağlayabilirsiniz. Geri bildirimleriniz benim için çok değerlidir!
 
-[← Ana Sayfaya Dön](../README.md)
+[← Ana Sayfaya Dön](https://github.com/borayldrmm/BeautyDate/tree/main)
 
 
 
