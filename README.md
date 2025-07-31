@@ -1,15 +1,22 @@
+# BeautyDate
+
+<p align="center">
+  <img width="512" height="512" alt="beautydade_icon" src="https://github.com/user-attachments/assets/374c0951-9b0f-49f8-a03a-710e0cfba809" />
+</p>
+
 ---
 
+## 🌐 Other Languages
 
-## 🧾 Introduction - Project Overview
-
----
+- 🇹🇷 [View this README in Turkish](README/turkish.md)
 
 ## 🧾 Project Documentation
  
 [BeautyDate Dokümantasyon.pdf](https://github.com/user-attachments/files/21497323/BeautyDate.Dokumantasyon.pdf)
 
 ---
+
+## 🧾 Introduction - Project Overview
 
 ## 👥 For Users
 
@@ -41,44 +48,6 @@ It helps you manage your customers, appointments, services, staff, and financial
 - ❌ **Account Deletion:** Fully integrated profile/account deletion module.  
 
 > The app follows scalable patterns with Repository, ViewModel, UI State separation, and fully reactive flows.
-
----
-
-## 🧾 Giriş - Proje Özeti
-
----
-
-## 👥 Kullanıcılar İçin
-
-**BeautyDate**, güzellik salonları için geliştirilmiş modern bir mobil uygulamadır.  
-Tek bir yerden müşterilerinizi, randevularınızı, hizmetlerinizi, çalışanlarınızı ve finansal kayıtlarınızı teknik bilgi gerekmeden kolayca yönetmenizi sağlar.
-
-- 📲 **Kayıt Ol & Giriş Yap:** E-posta ve şifre ile kolayca kayıt olabilir, güvenli şekilde giriş yapabilirsiniz.  
-- 👤 **Müşteri Yönetimi:** Müşteri ekleyebilir, geçmiş ziyaretlerini takip edebilir ve profil notları ekleyebilirsiniz.  
-- 📅 **Randevu Planlama:** Tarih, saat, hizmet ve personel seçerek hızlıca randevu oluşturabilirsiniz.  
-- 🧑‍💼 **Çalışan Takibi:** Çalışanlarınızı takip edebilir, yönetebilir ve güncelleyebilirsiniz.  
-- 💇‍♀️ **Hizmetler:** Manikür, masaj, lazer gibi hizmetleri listeleyebilir, fiyatlarını belirleyebilirsiniz.  
-- 📊 **İstatistik:** En yoğun günleri, en çok tercih edilen hizmetleri ve genel performansı analiz edebilirsiniz.  
-- 💸 **Finans Yönetimi:** Gelir ve giderleri takip ederek işletme performansınızı ölçebilirsiniz.  
-- ❌ **Hesap Silme:** Kullanıcılar, profil ayarlarından hesaplarını tamamen silebilir.
-
----
-
-## 👨‍💻 Geliştiriciler İçin
-
-**BeautyDate**, güzellik salonlarına yönelik olarak geliştirilen, Firebase destekli çok işletmeli bir mobil randevu yönetim uygulamasıdır. Jetpack Compose, MVVM ve SOLID prensiplerine göre inşa edilmiştir ve gerçek zamanlı olarak müşteri, randevu, hizmet, çalışan ve finansal verilerin güvenli şekilde yönetilmesini sağlar.
-
-- ✅ **Kimlik Doğrulama:** Firebase Auth (E-posta/Şifre) ile kayıt, giriş, doğrulama ve şifre sıfırlama işlemleri.  
-- 🔍 **Müşteri Kayıtları:** CRUD işlemleri ve businessId bazlı Firestore entegrasyonu.  
-- 🕡 **Randevu Sistemi:** Randevular oluşturulabilir, tamamlanmış/iptal edilmiş/güncel olarak kategorize edilir ve filtrelenebilir.  
-- 🧱 **Hizmet & Personel Modülü:** Hizmet ve çalışanlar modüler şekilde atanabilir ve yönetilebilir.  
-- 💳 **Finans & Gider Takibi:** Gelir, gider, işlem verileri izlenebilir, analiz ve grafiklerle desteklenir.  
-- 🌐 **Dil Desteği:** strings.xml ve dinamik LocaleHelper ile İngilizce/Türkçe dil desteği için hazırlık. 
-- 💪 **Güvenlik Kuralları:** Firebase Firestore'da çok işletmeli kullanıcı izolasyonu sağlayan güvenlik kuralları.  
-- ❌ **Hesap Silme:** Profil ayarlarından tam entegre hesap silme özelliği.
-
-> Uygulama; Repository, ViewModel, UI State ayrımı ve reaktif veri akışı gibi ölçeklenebilir yapı kalıplarını takip eder.
-
 
 ---
 
