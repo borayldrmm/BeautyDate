@@ -320,7 +320,7 @@ private fun ProfessionalMonthlyCalendar(
                         modifier = Modifier.size(32.dp)
                     ) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                            imageVector = Icons.Default.KeyboardArrowLeft,
                             contentDescription = "12 Ay Geri",
                             tint = if (selectedYear > 2020) 
                                 MaterialTheme.colorScheme.primary 
@@ -350,7 +350,7 @@ private fun ProfessionalMonthlyCalendar(
                         modifier = Modifier.size(32.dp)
                     ) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                            imageVector = Icons.Default.KeyboardArrowRight,
                             contentDescription = "12 Ay İleri",
                             tint = if (selectedYear < 2030) 
                                 MaterialTheme.colorScheme.primary 
@@ -370,7 +370,7 @@ private fun ProfessionalMonthlyCalendar(
                         modifier = Modifier.size(36.dp)
                     ) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                            imageVector = Icons.Default.KeyboardArrowLeft,
                             contentDescription = "Önceki Ay",
                             tint = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.size(20.dp)
@@ -384,7 +384,7 @@ private fun ProfessionalMonthlyCalendar(
                     ) {
                         Text(
                             text = LocalDate.of(selectedYear, selectedMonth, 1).format(
-                                DateTimeFormatter.ofPattern("MMM", java.util.Locale("tr", "TR"))
+                                DateTimeFormatter.ofPattern("MMM", java.util.Locale.forLanguageTag("tr-TR"))
                             ),
                             style = MaterialTheme.typography.bodyLarge,
                             fontWeight = FontWeight.SemiBold,
@@ -398,7 +398,7 @@ private fun ProfessionalMonthlyCalendar(
                         modifier = Modifier.size(36.dp)
                     ) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                            imageVector = Icons.Default.KeyboardArrowRight,
                             contentDescription = "Sonraki Ay",
                             tint = MaterialTheme.colorScheme.primary,
                             modifier = Modifier.size(20.dp)
@@ -470,7 +470,7 @@ private fun ProfessionalMonthlyCalendar(
 
             // Compact Selected Date Info
             Text(
-                text = selectedDate.format(DateTimeFormatter.ofPattern("dd MMM yyyy", java.util.Locale("tr", "TR"))),
+                text = selectedDate.format(DateTimeFormatter.ofPattern("dd MMM yyyy", java.util.Locale.forLanguageTag("tr-TR"))),
                 style = MaterialTheme.typography.bodyMedium,
                 fontWeight = FontWeight.Medium,
                 color = MaterialTheme.colorScheme.primary,
@@ -565,14 +565,14 @@ private fun MonthlyCalendarSection(
             ) {
                 IconButton(onClick = onPreviousMonth) {
                     Icon(
-                        imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                        imageVector = Icons.Default.KeyboardArrowLeft,
                         contentDescription = "Önceki Ay"
                     )
                 }
                 
                 Text(
                     text = LocalDate.of(selectedYear, selectedMonth, 1).format(
-                        DateTimeFormatter.ofPattern("MMMM yyyy", java.util.Locale("tr", "TR"))
+                        DateTimeFormatter.ofPattern("MMMM yyyy", java.util.Locale.forLanguageTag("tr-TR"))
                     ),
                     style = MaterialTheme.typography.titleLarge,
                     fontWeight = FontWeight.Bold,
@@ -581,7 +581,7 @@ private fun MonthlyCalendarSection(
                 
                 IconButton(onClick = onNextMonth) {
                     Icon(
-                        imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                        imageVector = Icons.Default.KeyboardArrowRight,
                         contentDescription = "Sonraki Ay"
                     )
                 }
@@ -720,14 +720,14 @@ private fun WeeklyCalendarSection(
             ) {
                 IconButton(onClick = onPreviousWeek) {
                     Icon(
-                        imageVector = Icons.AutoMirrored.Filled.KeyboardArrowLeft,
+                        imageVector = Icons.Default.KeyboardArrowLeft,
                         contentDescription = "Önceki Hafta"
                     )
                 }
                 
                 IconButton(onClick = onNextWeek) {
                     Icon(
-                        imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                        imageVector = Icons.Default.KeyboardArrowRight,
                         contentDescription = "Sonraki Hafta"
                     )
                 }

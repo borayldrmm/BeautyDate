@@ -7,6 +7,7 @@ import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -29,7 +30,6 @@ import com.borayildirim.beautydate.components.ServiceFab
 import com.borayildirim.beautydate.components.LoadingWithBreathingLogo
 import com.borayildirim.beautydate.data.repository.PriceUpdateType
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material.icons.automirrored.filled.TrendingUp
 import androidx.compose.ui.platform.LocalContext
 import com.borayildirim.beautydate.utils.ToastUtils
@@ -86,7 +86,7 @@ fun ServiceScreen(
                 navigationIcon = {
                     IconButton(onClick = onNavigateBack) {
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.ArrowBack,
+                            imageVector = Icons.Default.ArrowBack,
                             contentDescription = "Geri"
                         )
                     }

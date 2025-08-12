@@ -24,8 +24,8 @@ import com.borayildirim.beautydate.components.CustomerFab
 import com.borayildirim.beautydate.components.CustomerItem
 import com.borayildirim.beautydate.components.CustomerSearchBar
 import com.borayildirim.beautydate.components.LoadingWithBreathingLogo
-import com.google.accompanist.swiperefresh.SwipeRefresh
-import com.google.accompanist.swiperefresh.rememberSwipeRefreshState
+import androidx.compose.material3.pulltorefresh.PullToRefreshBox
+import androidx.compose.material3.pulltorefresh.rememberPullToRefreshState
 import com.google.firebase.auth.FirebaseAuth
 
 /**
@@ -47,10 +47,9 @@ fun MusterilerScreen(
     val currentUser by authViewModel.currentUser.collectAsStateWithLifecycle()
     val context = LocalContext.current
     
-    // SwipeRefresh state - Memory efficient: only recreate when needed
-    val swipeRefreshState = rememberSwipeRefreshState(
-        isRefreshing = uiState.isSyncing || uiState.isLoading
-    )
+    // PullToRefresh state - Memory efficient: only recreate when needed
+    val pullToRefreshState = rememberPullToRefreshState()
+    val isRefreshing = uiState.isSyncing || uiState.isLoading
     
     // Initialize customers when screen loads
     LaunchedEffect(Unit) {
@@ -169,9 +168,10 @@ fun MusterilerScreen(
                 Spacer(modifier = Modifier.height(8.dp))
             }
 
-            // Main content with swipe refresh
-            SwipeRefresh(
-                state = swipeRefreshState,
+            // Main content with pull-to-refresh
+            PullToRefreshBox(
+                state = pullToRefreshState,
+                isRefreshing = isRefreshing,
                 onRefresh = { customerViewModel.syncCustomers() }
             ) {
                 // Customer list or empty state

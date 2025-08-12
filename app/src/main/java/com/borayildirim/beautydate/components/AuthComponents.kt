@@ -14,8 +14,6 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.VisualTransformation
 import androidx.compose.ui.unit.dp
 import com.borayildirim.beautydate.R
-import com.borayildirim.beautydate.utils.PasswordValidator
-import com.borayildirim.beautydate.utils.PasswordValidationResult
 
 /**
  * Reusable authentication components for Login and Register screens
@@ -63,7 +61,7 @@ fun PasswordFieldWithInfo(
     showHelperText: Boolean = false
 ) {
     var passwordVisible by remember { mutableStateOf(false) }
-    
+
     Column(modifier = modifier) {
         OutlinedTextField(
             value = value,
@@ -79,7 +77,7 @@ fun PasswordFieldWithInfo(
                     if (showInfoIcon && onInfoClick != null) {
                         IconButton(onClick = onInfoClick) {
                             Icon(
-                                imageVector = Icons.Filled.Info,
+                                imageVector = Icons.Default.Info,
                                 contentDescription = stringResource(R.string.info)
                             )
                         }
@@ -89,9 +87,9 @@ fun PasswordFieldWithInfo(
                     ) {
                         Icon(
                             imageVector = if (passwordVisible) {
-                                Icons.Filled.Visibility
+                                Icons.Default.Visibility
                             } else {
-                                Icons.Filled.VisibilityOff
+                                Icons.Default.VisibilityOff
                             },
                             contentDescription = if (passwordVisible) {
                                 "Hide password"
@@ -106,7 +104,7 @@ fun PasswordFieldWithInfo(
             modifier = Modifier.fillMaxWidth(),
             singleLine = true
         )
-        
+
         if (showHelperText && value.isNotEmpty()) {
             Text(
                 text = stringResource(R.string.password_helper_text),
@@ -115,7 +113,7 @@ fun PasswordFieldWithInfo(
                 modifier = Modifier.padding(start = 16.dp, top = 4.dp)
             )
         }
-        
+
         if (isError && errorMessage != null) {
             Text(
                 text = errorMessage,
@@ -195,4 +193,4 @@ fun InfoDialog(
             }
         }
     )
-} 
+}

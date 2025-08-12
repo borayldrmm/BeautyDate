@@ -42,9 +42,9 @@ fun PasswordField(
                 ) {
                     Icon(
                         imageVector = if (passwordVisible) {
-                            Icons.Filled.Visibility
+                            Icons.Default.Visibility
                         } else {
-                            Icons.Filled.VisibilityOff
+                            Icons.Default.VisibilityOff
                         },
                         contentDescription = if (passwordVisible) {
                             "Hide password"

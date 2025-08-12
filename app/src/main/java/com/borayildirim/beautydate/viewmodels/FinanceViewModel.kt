@@ -264,7 +264,7 @@ class FinanceViewModel @Inject constructor(
         return try {
             val date = expense.createdAt?.toDate()?.toInstant()?.atZone(java.time.ZoneId.systemDefault())?.toLocalDate()
             date?.let {
-                val monthName = it.month.getDisplayName(TextStyle.FULL, Locale("tr"))
+                val monthName = it.month.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("tr"))
                 "$monthName ${it.year}"
             } ?: ""
         } catch (e: Exception) {

@@ -130,7 +130,7 @@ fun LogoutButton(
             Spacer(modifier = Modifier.width(8.dp))
         } else {
             Icon(
-                imageVector = Icons.AutoMirrored.Filled.ExitToApp,
+                imageVector = Icons.Default.ExitToApp,
                 contentDescription = null,
                 modifier = Modifier.size(20.dp)
             )

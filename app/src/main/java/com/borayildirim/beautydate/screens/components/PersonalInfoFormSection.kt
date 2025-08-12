@@ -3,6 +3,7 @@ package com.borayildirim.beautydate.screens.components
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material3.*
+import androidx.compose.material3.MenuAnchorType
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -103,42 +104,39 @@ fun PersonalInfoFormSection(
                         },
                         onValueChange = { },
                         readOnly = true,
+                        label = { Text("Cinsiyet") },
                         trailingIcon = {
                             ExposedDropdownMenuDefaults.TrailingIcon(expanded = expanded)
                         },
                         modifier = Modifier
                             .fillMaxWidth()
-                            .menuAnchor()
+                            .menuAnchor(MenuAnchorType.PrimaryNotEditable)
                     )
                     
                     ExposedDropdownMenu(
                         expanded = expanded,
                         onDismissRequest = { expanded = false }
                     ) {
-                        DropdownMenuItem(
-                            text = { Text("Erkek") },
-                            onClick = {
-                                onGenderChange(CustomerGender.MALE)
-                                expanded = false
-                            }
-                        )
-                        DropdownMenuItem(
-                            text = { Text("Kadın") },
-                            onClick = {
-                                onGenderChange(CustomerGender.FEMALE)
-                                expanded = false
-                            }
-                        )
-                        DropdownMenuItem(
-                            text = { Text("Diğer") },
-                            onClick = {
-                                onGenderChange(CustomerGender.OTHER)
-                                expanded = false
-                            }
-                        )
+                        CustomerGender.values().forEach { genderOption ->
+                            DropdownMenuItem(
+                                text = {
+                                    Text(
+                                        when (genderOption) {
+                                            CustomerGender.MALE -> "Erkek"
+                                            CustomerGender.FEMALE -> "Kadın"
+                                            CustomerGender.OTHER -> "Diğer"
+                                        }
+                                    )
+                                },
+                                onClick = {
+                                    onGenderChange(genderOption)
+                                    expanded = false
+                                }
+                            )
+                        }
                     }
                 }
             }
         }
     }
-} 
+}

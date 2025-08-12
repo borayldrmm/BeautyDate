@@ -5,6 +5,7 @@ import androidx.compose.foundation.text.KeyboardOptions
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowDropDown
 import androidx.compose.material3.*
+import androidx.compose.material3.MenuAnchorType
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.input.KeyboardType
@@ -74,7 +75,7 @@ fun ContactFormSection(
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .menuAnchor(),
+                    .menuAnchor(MenuAnchorType.PrimaryNotEditable),
                 colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
             )
             
@@ -100,40 +101,36 @@ fun ContactFormSection(
         // District dropdown
         ExposedDropdownMenuBox(
             expanded = districtDropdownExpanded,
-            onExpandedChange = { districtDropdownExpanded = it && selectedCity.isNotEmpty() }
+            onExpandedChange = { districtDropdownExpanded = it }
         ) {
             OutlinedTextField(
                 value = selectedDistrict,
                 onValueChange = { },
                 readOnly = true,
                 label = { Text("İlçe *") },
-                placeholder = { 
-                    Text(if (selectedCity.isEmpty()) "Önce il seçiniz" else "İlçe seçiniz") 
-                },
+                placeholder = { Text("Önce il seçiniz") },
                 trailingIcon = {
                     ExposedDropdownMenuDefaults.TrailingIcon(expanded = districtDropdownExpanded)
                 },
                 enabled = selectedCity.isNotEmpty(),
                 modifier = Modifier
                     .fillMaxWidth()
-                    .menuAnchor(),
+                    .menuAnchor(MenuAnchorType.PrimaryNotEditable),
                 colors = ExposedDropdownMenuDefaults.outlinedTextFieldColors()
             )
-            
-            if (selectedCity.isNotEmpty()) {
-                ExposedDropdownMenu(
-                    expanded = districtDropdownExpanded,
-                    onDismissRequest = { districtDropdownExpanded = false }
-                ) {
-                    districtList.forEach { district ->
-                        DropdownMenuItem(
-                            text = { Text(district) },
-                            onClick = {
-                                onDistrictSelected(district)
-                                districtDropdownExpanded = false
-                            }
-                        )
-                    }
+
+            ExposedDropdownMenu(
+                expanded = districtDropdownExpanded,
+                onDismissRequest = { districtDropdownExpanded = false }
+            ) {
+                districtList.forEach { district ->
+                    DropdownMenuItem(
+                        text = { Text(district) },
+                        onClick = {
+                            onDistrictSelected(district)
+                            districtDropdownExpanded = false
+                        }
+                    )
                 }
             }
         }
@@ -144,14 +141,16 @@ fun ContactFormSection(
         OutlinedTextField(
             value = uiState.address,
             onValueChange = { authActions.updateAddress(it) },
-            label = { Text("İşletme Adresi *") },
+            label = { Text("Adres") },
+            placeholder = { Text("Mahalle, sokak, bina no, iç kapı no") },
             modifier = Modifier.fillMaxWidth(),
-            singleLine = true
+            minLines = 2,
+            maxLines = 3
         )
         
         Spacer(modifier = Modifier.height(16.dp))
         
-        // Tax number (optional)
+        // Tax number field
         OutlinedTextField(
             value = uiState.taxNumber,
             onValueChange = { authActions.updateTaxNumber(it) },
@@ -161,4 +160,4 @@ fun ContactFormSection(
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Number)
         )
     }
-} 
+}

@@ -7,8 +7,8 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material.icons.filled.*
-import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -39,7 +39,7 @@ fun FinanceScreen(
     onNavigateBack: () -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsStateWithLifecycle()
-    val currencyFormat = NumberFormat.getCurrencyInstance(Locale("tr", "TR"))
+    val currencyFormat = NumberFormat.getCurrencyInstance(Locale.forLanguageTag("tr-TR"))
     
     var selectedMonth by remember { mutableStateOf(getCurrentMonthKey()) }
     var selectedTabIndex by remember { mutableIntStateOf(0) }
@@ -89,7 +89,7 @@ fun FinanceScreen(
                         datePickerState.selectedDateMillis?.let { millis ->
                             val date = java.util.Date(millis)
                             val localDate = date.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate()
-                            val monthName = localDate.month.getDisplayName(TextStyle.FULL, Locale("tr"))
+                            val monthName = localDate.month.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("tr"))
                             selectedMonth = "$monthName ${localDate.year}"
                         }
                         showDatePicker = false
@@ -122,7 +122,7 @@ fun FinanceScreen(
             navigationIcon = {
                 IconButton(onClick = onNavigateBack) {
                     Icon(
-                        Icons.AutoMirrored.Filled.ArrowBack, 
+                        Icons.Default.ArrowBack, 
                         contentDescription = "Geri"
                     )
                 }
@@ -398,7 +398,7 @@ fun FinanceScreen(
 // Helper functions
 private fun getCurrentMonthKey(): String {
     val now = LocalDate.now()
-    return "${now.month.getDisplayName(TextStyle.FULL, Locale("tr"))} ${now.year}"
+    return "${now.month.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("tr"))} ${now.year}"
 }
 
 private fun getMonthOptions(): List<String> {
@@ -407,7 +407,7 @@ private fun getMonthOptions(): List<String> {
     
     for (i in 0..11) {
         val date = current.minusMonths(i.toLong())
-        val monthName = date.month.getDisplayName(TextStyle.FULL, Locale("tr"))
+        val monthName = date.month.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("tr"))
         options.add("$monthName ${date.year}")
     }
     
@@ -418,7 +418,7 @@ private fun getMonthKeyFromTimestamp(timestamp: com.google.firebase.Timestamp?):
     return timestamp?.let {
         val date = it.toDate()
         val localDate = date.toInstant().atZone(java.time.ZoneId.systemDefault()).toLocalDate()
-        val monthName = localDate.month.getDisplayName(TextStyle.FULL, Locale("tr"))
+        val monthName = localDate.month.getDisplayName(TextStyle.FULL, Locale.forLanguageTag("tr"))
         "$monthName ${localDate.year}"
     } ?: ""
 }
@@ -949,7 +949,7 @@ private fun getMonthKeyFromExpenseDate(expenseDate: String): String {
             expenseDate,
             java.time.format.DateTimeFormatter.ofPattern("dd/MM/yyyy")
         )
-        val monthName = date.month.getDisplayName(java.time.format.TextStyle.FULL, java.util.Locale("tr"))
+        val monthName = date.month.getDisplayName(java.time.format.TextStyle.FULL, java.util.Locale.forLanguageTag("tr"))
         "$monthName ${date.year}"
     } catch (e: Exception) {
         ""

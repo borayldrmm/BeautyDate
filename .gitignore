@@ -31,3 +31,7 @@ google-services.json
 
 # Android Profiling
 *.hprof
+app/release/app-release.aab
+app/release/app-release.aab
+app/release/.DS_Store
+app/build.gradle.kts

@@ -47,7 +47,7 @@ fun PasswordFieldWithInfo(
                         onClick = { showInfoDialog = true }
                     ) {
                         Icon(
-                            imageVector = Icons.Filled.Info,
+                            imageVector = Icons.Default.Info,
                             contentDescription = "Şifre gereksinimleri",
                             tint = MaterialTheme.colorScheme.primary
                         )
@@ -59,9 +59,9 @@ fun PasswordFieldWithInfo(
                     ) {
                         Icon(
                             imageVector = if (passwordVisible) {
-                                Icons.Filled.Visibility
+                                Icons.Default.Visibility
                             } else {
-                                Icons.Filled.VisibilityOff
+                                Icons.Default.VisibilityOff
                             },
                             contentDescription = if (passwordVisible) {
                                 "Şifreyi gizle"

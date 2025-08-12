@@ -54,7 +54,7 @@ object OtherMenuItemFactory {
             OtherMenuItem(
                 id = "how_to_use",
                 title = "Nasıl Kullanılır?",
-                icon = Icons.AutoMirrored.Filled.Help,
+                icon = Icons.Default.Help,
                 route = "tutorial",
                 isEnabled = true // Tutorial system implemented
             ),
@@ -80,7 +80,7 @@ object OtherMenuItemFactory {
             OtherMenuItem(
                 id = "logout",
                 title = "Çıkış Yap",
-                icon = Icons.AutoMirrored.Filled.ExitToApp,
+                icon = Icons.Default.ExitToApp,
                 route = "logout",
                 isSpecial = true
             )

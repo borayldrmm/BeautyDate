@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.hilt)
-    id("org.jetbrains.kotlin.kapt")
+    id("com.google.devtools.ksp")
 
     // Google services Gradle plugin
     id("com.google.gms.google-services")
@@ -17,8 +17,8 @@ android {
         applicationId = "com.borayildirim.beautydate"
         minSdk = 29
         targetSdk = 36
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 2
+        versionName = "1.2.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -136,7 +136,7 @@ dependencies {
 
     // Hilt for dependency injection
     implementation(libs.hilt.android)
-    kapt(libs.hilt.compiler)
+    ksp(libs.hilt.compiler)
     implementation(libs.hilt.navigation.compose)
 
     // Firebase dependencies
@@ -151,7 +151,7 @@ dependencies {
     // Room for local database
     implementation(libs.room.runtime)
     implementation(libs.room.ktx)
-    kapt(libs.room.compiler)
+    ksp(libs.room.compiler)
 
     // Testing dependencies
     testImplementation(libs.junit)
@@ -168,8 +168,7 @@ dependencies {
     // Add ui-text for KeyboardOptions
     implementation(libs.androidx.ui.text)
     
-    // SwipeRefresh for pull-to-refresh functionality
-    implementation("com.google.accompanist:accompanist-swiperefresh:0.36.0")
+    // PullToRefresh API is now part of Material3 - no separate dependency needed
     
     // Core library desugaring for modern Java features on older Android versions
     coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
