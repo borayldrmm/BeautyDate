@@ -1,6 +1,7 @@
 <img width="1000" height="1000" alt="logo_png" src="https://github.com/user-attachments/assets/51bbc41f-3796-4654-808d-fcf2c851ffb3" />
 
 ---
+# 💄 BeautyDate - Beauty Salon Management Application
 
 ## 🌐 Other Languages
 
